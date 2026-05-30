@@ -52,7 +52,33 @@
   
   .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
   .skill-tags span { font-size: 13px; padding: 6px 14px; border-radius: 6px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text); }
-  
+
+   /* Custom Link Styles to override default blue */
+ .link-out { 
+   display: inline-block; 
+   margin-top: auto; 
+   color: var(--accent); 
+   font-size: 14px; 
+   text-decoration: none; 
+   font-weight: 500; 
+   transition: transform 0.2s, color 0.2s; 
+ }
+ .link-out:hover { 
+   transform: translateX(4px); 
+   color: #fff; 
+ }
+ 
+ .cta-box a { 
+   color: var(--text); 
+   text-decoration: none; 
+   border-bottom: 2px solid var(--accent); 
+   padding-bottom: 2px; 
+   font-weight: 500; 
+   transition: color 0.2s; 
+ }
+ .cta-box a:hover { 
+   color: var(--accent); 
+ }
   /* Proof of Work */
   .highlight-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; position: relative; }
   .highlight-img-placeholder { height: 160px; background: linear-gradient(145deg, #1a1a1a, #0a0a0a); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border); position: relative; }
@@ -201,8 +227,8 @@
   </div>
 
   <div class="cta-box">
-    <p>Want to see more of my creative and graphic design work?</p>
-    <a href="#contact">Visit my full Design Portfolio link in the Contact section 👇</a>
+  <p>Want to see more of my creative and graphic design work?</p>
+  <a href="#contact">Visit my full Design Portfolio link in the Contact section 👇</a>
   </div>
 </div>
 
